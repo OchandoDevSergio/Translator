@@ -79,7 +79,7 @@ app = grd.Interface(
      grd.Audio(label="Japanese")
      ],
    title="Translator",
-   description="AI translator to different languages"
+   description="AI translator from spanish to different languages"
 )
 
 app.launch()
