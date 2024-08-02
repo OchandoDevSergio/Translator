@@ -68,7 +68,7 @@ def transcription_to_audio(text: str, language: str) -> str:
 app = grd.Interface(
    fn= translator_function,
    inputs=grd.Audio(
-       sources=["microphone"],
+       sources=["microphone","upload"],
        type="filepath",
        label= "Spanish"
    ),

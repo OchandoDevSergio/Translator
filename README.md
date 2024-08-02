@@ -33,25 +33,25 @@ Activar el entorno virtual con el comando correspondiente según el terminal.
 2-Instalar las dependencias necesarias, ejecutándo en el mismo terminal el comando:
   pip install -r requirements.txt
 
-3-Ejecutar el fichero main.py
+3-Ejecutar el fichero **main.py**
 
 4- Se accede a través del buscador a la URL:
 
 http://127.0.0.1:7860
 
-***En caso de no disponer de servicio en la api de elevenlabs, generar una cuenta y sustituir la API key del fichero .env por la de la nueva cuenta generada.
+***En caso de no disponer de servicio en la api de elevenlabs, generar una cuenta y sustituir la API key del fichero **.env** por la de la nueva cuenta generada.
 
 ### Vistas
 
 La aplicación dispone de una única vista con componentes gennerados por Gradio, en la que se muestra en la parte izquierda un capturador de audio y en la parte derecha los outputs en los diferentes idiomas disponibles.
 
-<a href="https://ibb.co/NyqYD8Y"><img src="https://i.ibb.co/nLykdHk/Sin-t-tulo.jpg" alt="Sin-t-tulo" border="0" />
+<img src="https://i.ibb.co/nLykdHk/Sin-t-tulo.jpg" alt="Sin-t-tulo" border="0" />
 
 ### Funcionamiento
 
-Esta aplicación se ha desarrollado principalmente en el fichero main.py con sólo 85 líneas de código. Para ello hemos empleado la tecnología Gradio que consta de una librería de componentes pregenerados. Hemos seteado que se introduzca un input de audio, este se pase por la función translator_function() que hemos desarrollado y de lugar a 4 outputs de audio, uno por cada idioma a los que se traduce.
+Esta aplicación se ha desarrollado principalmente en el fichero main.py con sólo 85 líneas de código. Para ello hemos empleado la tecnología **Gradio** que consta de una librería de componentes pregenerados. Hemos seteado que se introduzca un input de audio, este se pase por la función *translator_function()* que hemos desarrollado y dé lugar a 4 outputs de audio, uno por cada idioma a los que se traduce.
 
-La función translator_function() emplea la tecnología whisper de openAI para tomar el audio que introducimos por el micrófono y transcribirlo a texto. A continuación emplea la tecnología translate de python para traducir el texto transcrito a los 4 idiomas y por último emplea la tecnología de elevenlabs para locutar cada traducción, mostrándolas en sus respectivos outputs.
+La función *translator_function()* emplea la tecnología **whisper** de openAI para tomar el audio, que introducimos por el micrófono o por un sistema de upload y transcribirlo a texto. A continuación emplea la tecnología **translate** de python para traducir el texto transcrito a los 4 idiomas y por último emplea la tecnología de **elevenlabs** para locutar cada traducción, mostrándolas en sus respectivos outputs.
 
 ### Recursos alternativos y fuentes
 
