@@ -45,7 +45,7 @@ http://127.0.0.1:7860
 
 La aplicación dispone de una única vista con componentes gennerados por Gradio, en la que se muestra en la parte izquierda un capturador de audio y en la parte derecha los outputs en los diferentes idiomas disponibles.
 
-![Translator](https://ibb.co/NyqYD8Y)
+<a href="https://ibb.co/NyqYD8Y"><img src="https://i.ibb.co/nLykdHk/Sin-t-tulo.jpg" alt="Sin-t-tulo" border="0" />
 
 ### Funcionamiento
 
