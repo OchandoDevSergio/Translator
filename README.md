@@ -14,6 +14,8 @@
 
 - [Funcionamiento :arrow_forward:](#funcionamiento)
 
+- [Errores conocidos :no_entry:](#errores-conocidos) 
+
 - [Recursos alternativos y fuentes :art:](#recursos-alternativos-y-fuentes)  
 
 #
@@ -52,6 +54,10 @@ La aplicación dispone de una única vista con componentes gennerados por Gradio
 Esta aplicación se ha desarrollado principalmente en el fichero main.py con sólo 85 líneas de código. Para ello hemos empleado la tecnología **Gradio** que consta de una librería de componentes pregenerados. Hemos seteado que se introduzca un input de audio, este se pase por la función *translator_function()* que hemos desarrollado y dé lugar a 4 outputs de audio, uno por cada idioma a los que se traduce.
 
 La función *translator_function()* emplea la tecnología **whisper** de openAI para tomar el audio, que introducimos por el micrófono o por un sistema de upload y transcribirlo a texto. A continuación emplea la tecnología **translate** de python para traducir el texto transcrito a los 4 idiomas y por último emplea la tecnología de **elevenlabs** para locutar cada traducción, mostrándolas en sus respectivos outputs.
+
+### Errores conocidos
+
+-Parece que la tecnología de elevenlabs puede presentar problemas para la locución de números en idiomas que no sean inglés en aglunas ocasiones.
 
 ### Recursos alternativos y fuentes
 
